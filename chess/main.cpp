@@ -5,15 +5,29 @@ const bool BLACK = false;
 
 using namespace std;
 int main(){
-    pieceType pawn1("pawn",WHITE);
-    pieceType pawn2("pawn",WHITE);
-    pieceType pawn3("pawn",BLACK);
-    pieceType pawn4("pawn",BLACK);
+    //TODO:
+    //Create board
+    //board = 8x8 vector of numbers
+    
 
-    cout<<pawn1.getColor()<<endl;
-    cout<<pawn2.getColor()<<endl;
-    cout<<pawn3.getColor()<<endl;
-    cout<<pawn4.getColor()<<endl;
+
+
+    //TODO:
+    //1. while nobody has won yet
+        //loop through the moves
+        //until someone loses
+
+
+        //-> reask the same player to reinput another (user input)
+
+        //error check if input is legal (error checking)
+
+        //output the updated board after every move
+
+
+
+    //1a. 
+
 
     return 0;
 }

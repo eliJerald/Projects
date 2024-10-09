@@ -8,6 +8,7 @@ class pieceType
 {
     string type;
     bool color;
+    string position;
     public:
     pieceType();
     pieceType(string type,bool color){
@@ -16,6 +17,7 @@ class pieceType
     }
     string getType();
     bool getColor();
+    string getPosition();
     //color is white or black
 };
 

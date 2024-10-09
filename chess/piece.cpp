@@ -11,3 +11,8 @@ bool pieceType::getColor()
 {
     return this->color;
 }
+
+string pieceType::getPosition()
+{
+    return this->position;
+}
