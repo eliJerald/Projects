@@ -4,21 +4,16 @@
 
 using namespace std;
 
-class pieceType
+enum class Position
+{ KING,QUEEN,ROOK,KNIGHT,BISHOP,PAWN };
+
+class Piece 
 {
-    string type;
     bool color;
-    string position;
+    Position position;
     public:
-    pieceType();
-    pieceType(string type,bool color){
-        this->type = type;
-        this->color = color;
-    }
-    string getType();
-    bool getColor();
-    string getPosition();
-    //color is white or black
+    string getPosition(); //have in other piece.h folder
+    Piece(bool color, Position position){this->color = color,this->position = position;}
 };
 
 #endif
