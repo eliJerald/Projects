@@ -15,7 +15,7 @@ class Piece
     bool color;
     Position position;
     public:
-    getPosition(); //have in other piece.h folder
+    string getPosition(); //have in other piece.h folder
     Piece(bool color, Position position){this->color = color,this->position = position;}
 };
 
