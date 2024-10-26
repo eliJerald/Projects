@@ -44,8 +44,33 @@ void blackJack(){
         }else if(tolower(yn) == 'y'){
             cin.clear();
             cin.ignore(100,'\n');//ignores if user says "y...";
-            return;
             //implement->>>
+            for(int i = 0;i<52;i++){
+                if(i%13 == 0) cout<<"new Suit:\n";
+                if(i%13 <10 & i%13 != 0){
+                    //number cards
+                    Deck[i].val.push_back(i%13 + 1);
+                }else if(i%13 == 0){
+                    //Aces
+                    Deck[i].val.push_back(1);
+                    Deck[i].val.push_back(11);
+                }else{
+                    //face cards
+                    Deck[i].val.push_back(10);
+                }
+                if(Deck[i].val.size() > 1){
+                    for(int num:Deck[i].val){
+                        cout<<num<<", ";
+                    }
+                        cout<<endl;
+                }else{
+                    cout<<Deck[i].val[0]<<endl;
+                }
+            }
+            
+
+
+            return;
         }else{
             cout<<"incorrect input\n";
             cin.clear();
